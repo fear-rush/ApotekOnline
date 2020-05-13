@@ -34,6 +34,7 @@ namespace ApotekOnline
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Terimakasih telah berbelanja di Apotek Online");
+            this.Close();
         }
 
         private void label2_Click(object sender, EventArgs e)
