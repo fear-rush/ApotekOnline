@@ -1,0 +1,12 @@
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Debug\ApotekOnlineDBLibrary.dll
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Debug\ApotekOnlineDBLibrary.pdb
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\obj\Debug\ApotekOnlineDBLibrary.csproj.CoreCompileInputs.cache
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\obj\Debug\ApotekOnlineDBLibrary.dll
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\obj\Debug\ApotekOnlineDBLibrary.pdb
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Debug\ApotekOnlineDBLibrary.dll.config
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Debug\EntityFramework.dll
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Debug\EntityFramework.SqlServer.dll
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Debug\EntityFramework.xml
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Debug\EntityFramework.SqlServer.xml
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\obj\Debug\ApotekOnlineDBLibrary.csproj.CopyComplete
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\obj\Debug\ApotekOnlineDBLibrary.csprojAssemblyReference.cache

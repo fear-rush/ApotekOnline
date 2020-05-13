@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ApotekOnlineModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ApotekOnlineEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DaftarObats" EntityType="ApotekOnlineModel.DaftarObat" />
+    <EntitySet Name="DaftarReseps" EntityType="ApotekOnlineModel.DaftarResep" />
+    <EntitySet Name="Hendras" EntityType="ApotekOnlineModel.Hendra" />
+    <EntitySet Name="Isnans" EntityType="ApotekOnlineModel.Isnan" />
+    <EntitySet Name="Roberts" EntityType="ApotekOnlineModel.Robert" />
+  </EntityContainer>
+  <EntityType Name="DaftarObat">
+    <Key>
+      <PropertyRef Name="ObatID" />
+    </Key>
+    <Property Name="ObatID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NamaObat" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Keterangan" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Harga" Type="Double" Nullable="false" />
+    <Property Name="Stok" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DaftarResep">
+    <Key>
+      <PropertyRef Name="ResepID" />
+    </Key>
+    <Property Name="ResepID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NamaObat" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Jumlah" Type="Int32" Nullable="false" />
+    <Property Name="Keterangan" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NamaPasien" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Hendra">
+    <Key>
+      <PropertyRef Name="PasienID" />
+    </Key>
+    <Property Name="PasienID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NamaPasien" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Keluhan" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Tanggal" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="Isnan">
+    <Key>
+      <PropertyRef Name="PasienID" />
+    </Key>
+    <Property Name="PasienID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NamaPasien" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Keluhan" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Tanggal" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="Robert">
+    <Key>
+      <PropertyRef Name="PasienID" />
+    </Key>
+    <Property Name="PasienID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NamaPasien" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Keluhan" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Tanggal" Type="DateTime" Precision="0" />
+  </EntityType>
+</Schema>

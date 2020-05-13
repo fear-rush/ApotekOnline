@@ -1,0 +1,11 @@
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Release\ApotekOnlineDBLibrary.dll.config
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Release\ApotekOnlineDBLibrary.dll
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Release\ApotekOnlineDBLibrary.pdb
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Release\EntityFramework.dll
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Release\EntityFramework.SqlServer.dll
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Release\EntityFramework.xml
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\bin\Release\EntityFramework.SqlServer.xml
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\obj\Release\ApotekOnlineDBLibrary.csproj.CoreCompileInputs.cache
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\obj\Release\ApotekOnlineDBLibrary.csproj.CopyComplete
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\obj\Release\ApotekOnlineDBLibrary.dll
+F:\ApotekOnline\ApotekOnline\ApotekOnlineDBLibrary\obj\Release\ApotekOnlineDBLibrary.pdb

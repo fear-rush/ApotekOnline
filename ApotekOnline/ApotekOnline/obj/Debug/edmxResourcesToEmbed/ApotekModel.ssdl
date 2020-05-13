@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ApotekOnlineEntities.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DaftarObat">
+    <Key>
+      <PropertyRef Name="ObatID" />
+    </Key>
+    <Property Name="ObatID" Type="int" Nullable="false" />
+    <Property Name="NamaObat" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Keterangan" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Harga" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DaftarResep">
+    <Key>
+      <PropertyRef Name="ResepID" />
+    </Key>
+    <Property Name="ResepID" Type="int" Nullable="false" />
+    <Property Name="NamaObat" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Jumlah" Type="int" Nullable="false" />
+    <Property Name="Keterangan" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Hendra">
+    <Key>
+      <PropertyRef Name="PasienID" />
+    </Key>
+    <Property Name="PasienID" Type="int" Nullable="false" />
+    <Property Name="NamaPasien" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Keluhan" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Isnan">
+    <Key>
+      <PropertyRef Name="PasienID" />
+    </Key>
+    <Property Name="PasienID" Type="int" Nullable="false" />
+    <Property Name="NamaPasien" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Keluhan" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Robert">
+    <Key>
+      <PropertyRef Name="PasienID" />
+    </Key>
+    <Property Name="PasienID" Type="int" Nullable="false" />
+    <Property Name="NamaPasien" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Keluhan" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ApotekOnlineEntitiesStoreContainer">
+    <EntitySet Name="DaftarObat" EntityType="Self.DaftarObat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DaftarResep" EntityType="Self.DaftarResep" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Hendra" EntityType="Self.Hendra" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Isnan" EntityType="Self.Isnan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Robert" EntityType="Self.Robert" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ApotekOnlineEntities" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DaftarObat">
+    <Key>
+      <PropertyRef Name="ObatID" />
+    </Key>
+    <Property Name="ObatID" Type="Int32" Nullable="false" />
+    <Property Name="NamaObat" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Keterangan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Harga" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DaftarResep">
+    <Key>
+      <PropertyRef Name="ResepID" />
+    </Key>
+    <Property Name="ResepID" Type="Int32" Nullable="false" />
+    <Property Name="NamaObat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Jumlah" Type="Int32" Nullable="false" />
+    <Property Name="Keterangan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Hendra">
+    <Key>
+      <PropertyRef Name="PasienID" />
+    </Key>
+    <Property Name="PasienID" Type="Int32" Nullable="false" />
+    <Property Name="NamaPasien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Keluhan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Robert">
+    <Key>
+      <PropertyRef Name="PasienID" />
+    </Key>
+    <Property Name="PasienID" Type="Int32" Nullable="false" />
+    <Property Name="NamaPasien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Keluhan" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Isnan">
+    <Key>
+      <PropertyRef Name="PasienID" />
+    </Key>
+    <Property Name="PasienID" Type="Int32" Nullable="false" />
+    <Property Name="NamaPasien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Keluhan" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ApotekOnlineContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DaftarObats" EntityType="Self.DaftarObat" />
+    <EntitySet Name="DaftarReseps" EntityType="Self.DaftarResep" />
+    <EntitySet Name="Hendras" EntityType="Self.Hendra" />
+    <EntitySet Name="Roberts" EntityType="Self.Robert" />
+    <EntitySet Name="Isnans" EntityType="Self.Isnan" />
+  </EntityContainer>
+</Schema>

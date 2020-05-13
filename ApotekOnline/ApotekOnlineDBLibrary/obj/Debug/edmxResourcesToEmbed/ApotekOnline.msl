@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ApotekOnlineModelStoreContainer" CdmEntityContainer="ApotekOnlineContext">
+    <EntitySetMapping Name="DaftarObats">
+      <EntityTypeMapping TypeName="ApotekOnlineModel.DaftarObat">
+        <MappingFragment StoreEntitySet="DaftarObat">
+          <ScalarProperty Name="ObatID" ColumnName="ObatID" />
+          <ScalarProperty Name="NamaObat" ColumnName="NamaObat" />
+          <ScalarProperty Name="Keterangan" ColumnName="Keterangan" />
+          <ScalarProperty Name="Harga" ColumnName="Harga" />
+          <ScalarProperty Name="Stok" ColumnName="Stok" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DaftarReseps">
+      <EntityTypeMapping TypeName="ApotekOnlineModel.DaftarResep">
+        <MappingFragment StoreEntitySet="DaftarResep">
+          <ScalarProperty Name="ResepID" ColumnName="ResepID" />
+          <ScalarProperty Name="NamaPasien" ColumnName="NamaPasien" />
+          <ScalarProperty Name="NamaObat" ColumnName="NamaObat" />
+          <ScalarProperty Name="Jumlah" ColumnName="Jumlah" />
+          <ScalarProperty Name="Keterangan" ColumnName="Keterangan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hendras">
+      <EntityTypeMapping TypeName="ApotekOnlineModel.Hendra">
+        <MappingFragment StoreEntitySet="Hendra">
+          <ScalarProperty Name="PasienID" ColumnName="PasienID" />
+          <ScalarProperty Name="NamaPasien" ColumnName="NamaPasien" />
+          <ScalarProperty Name="Keluhan" ColumnName="Keluhan" />
+          <ScalarProperty Name="Tanggal" ColumnName="Tanggal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Isnans">
+      <EntityTypeMapping TypeName="ApotekOnlineModel.Isnan">
+        <MappingFragment StoreEntitySet="Isnan">
+          <ScalarProperty Name="PasienID" ColumnName="PasienID" />
+          <ScalarProperty Name="NamaPasien" ColumnName="NamaPasien" />
+          <ScalarProperty Name="Keluhan" ColumnName="Keluhan" />
+          <ScalarProperty Name="Tanggal" ColumnName="Tanggal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roberts">
+      <EntityTypeMapping TypeName="ApotekOnlineModel.Robert">
+        <MappingFragment StoreEntitySet="Robert">
+          <ScalarProperty Name="PasienID" ColumnName="PasienID" />
+          <ScalarProperty Name="NamaPasien" ColumnName="NamaPasien" />
+          <ScalarProperty Name="Keluhan" ColumnName="Keluhan" />
+          <ScalarProperty Name="Tanggal" ColumnName="Tanggal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
