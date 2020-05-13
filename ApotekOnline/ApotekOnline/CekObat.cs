@@ -162,7 +162,6 @@ namespace ApotekOnline
 
                 BeliObat beliobat = new BeliObat(tbBuyerName.Text, tbBuyerAddress.Text, query, int.Parse(tbDrugTotal.Text), tbBuyerDrug.Text);
                 double sum = beliobat.TotalHarga(query, int.Parse(tbDrugTotal.Text));
-                MessageBox.Show(sum.ToString());
 
 
                 Konfirmasi konfirmasi = new Konfirmasi(beliobat);
